@@ -30,12 +30,20 @@ ListItem {
                 model: [firstcolor, secondcolor, thirdcolor, fourthcolor]
 
                 GlassItem {
+                    property bool menuopened: false
+
                     width: Theme.iconSizeLarge
                     height: Theme.iconSizeLarge
                     color: Constants.colors[modelData]
                     falloffRadius: modelData == 0 ? 0.1 : 0.25
                     radius: 1
                     cache: true
+
+                    Rectangle {
+                        anchors.fill: parent
+                        color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
+                        visible: menuopened
+                    }
 
                     MouseArea {
                         anchors.fill: parent
@@ -63,6 +71,7 @@ ListItem {
                         onPressAndHold: function() {
                             if(editable) {
                                 colmenu.appliesto = index
+                                menuopened = true
                                 thislistitem.showMenu()
                             }
                         }
@@ -95,6 +104,12 @@ ListItem {
     menu: ContextMenu {
         property int appliesto: -1
         id: colmenu
+
+        onClosed: {
+            if(appliesto >= 0) {
+                dots.itemAt(appliesto).menuopened = false
+            }
+        }
 
         Row {
             spacing: Theme.paddingMedium
