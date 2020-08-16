@@ -20,8 +20,6 @@ Page {
             answer2: 0
             answer3: 0
             answer4: 0
-            correctplace: 0
-            correctcolor: 0
             current: true
         }
     }
@@ -65,8 +63,6 @@ Page {
             secondanswer: answer2
             thirdanswer: answer3
             fourthanswer: answer4
-            correctplac: correctplace
-            correctcolo: correctcolor
             editable: current
         }
 

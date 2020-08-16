@@ -10,8 +10,10 @@ function newGame() {
         color2: 0,
         color3: 0,
         color4: 0,
-        correctplace: 0,
-        correctcolor: 0,
+        answer1: 0,
+        answer2: 0,
+        answer3: 0,
+        answer4: 0,
         current: true
     })
     wonLabel.visible = false;
@@ -30,8 +32,6 @@ function newGuess() {
         answer2: 0,
         answer3: 0,
         answer4: 0,
-        correctplace: 0,
-        correctcolor: 0,
         current: true
     }
 

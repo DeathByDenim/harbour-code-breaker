@@ -12,8 +12,6 @@ ListItem {
     property int secondanswer: 0
     property int thirdanswer: 0
     property int fourthanswer: 0
-    property int correctplac: 0
-    property int correctcolo: 0
     property bool editable: true
 
     contentHeight: Theme.itemSizeMedium
@@ -72,10 +70,6 @@ ListItem {
                 }
             }
 
-            ListModel {
-                id: hintModel
-            }
-
             Grid {
                 anchors.verticalCenter: parent.verticalCenter
                 columns: 2
@@ -103,8 +97,6 @@ ListItem {
         id: colmenu
 
         Row {
-
-//            anchors.centerIn: parent
             spacing: Theme.paddingMedium
             leftPadding: Theme.paddingLarge
             topPadding: Theme.paddingMedium
@@ -145,17 +137,5 @@ ListItem {
                 }
             }
         }
-    }
-
-    Component.onCompleted: function() {
-        colmenu.appliesto = -1
-
-        hintModel.clear()
-        for(var i = 0; i < correctcolo; i++)
-            hintModel.append({modelData: 2})
-        for(var i = 0; i < correctplac; i++)
-            hintModel.append({modelData: 1})
-        for(var i = 0; i < 4 - correctcolo - correctplac; i++)
-            hintModel.append({modelData: 0})
     }
 }
