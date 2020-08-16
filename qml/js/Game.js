@@ -18,6 +18,7 @@ function newGame() {
     })
     wonLabel.visible = false;
     guessmenu.enabled = true;
+    guesspushmenu.visible = true;
 }
 
 function newGuess() {

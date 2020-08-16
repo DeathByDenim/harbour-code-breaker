@@ -40,8 +40,13 @@ Page {
         }
 
         PushUpMenu {
+            id: guesspushmenu
+            onActiveChanged: {
+                if(!guessmenu.enabled) {
+                    visible = false
+                }
+            }
             MenuItem {
-                enabled: true
                 id: guessmenu
                 text: qsTr("Guess")
                 onClicked: Game.newGuess()
