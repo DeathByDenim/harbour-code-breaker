@@ -101,7 +101,7 @@ Page {
                 ctx.fillStyle = Theme.highlightColor
                 for(var i = 0; i < stats.length; i++) {
                     ctx.fillRect(
-                        Theme.paddingSmall + i*(barwidth + barspacing),
+                        Theme.paddingSmall + (stats[i].x - minx)*(barwidth + barspacing),
                         graphheight - graphheight * stats[i].y / maxy,
                         barwidth,
                         graphheight * stats[i].y / maxy - Theme.paddingSmall
