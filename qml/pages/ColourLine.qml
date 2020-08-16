@@ -107,8 +107,8 @@ ListItem {
         id: colmenu
 
         onClosed: {
-            if(appliesto >= 0) {
-                dots.itemAt(appliesto).menuopened = false
+            for(var i = 0; i < dots.count; i++) {
+                dots.itemAt(i).menuopened = false;
             }
         }
 
