@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=harbour-code-breaker
+Exec=sailfish-qml harbour-code-breaker
+Name=Code Breaker
+Name[de]=Codeknacker
+Name[nl]=Codekraker
+Name[fr]=Pirater le code
