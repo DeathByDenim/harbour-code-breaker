@@ -5,7 +5,7 @@
     <name>CoverPage</name>
     <message>
         <source>Code Breaker</source>
-        <translation>Pirater le code</translation>
+        <translation>Piratage du code</translation>
     </message>
 </context>
 <context>
@@ -28,14 +28,14 @@
     </message>
     <message>
         <source>Code Breaker</source>
-        <translation type="unfinished">Pirater le code</translation>
+        <translation>Piratage du code</translation>
     </message>
 </context>
 <context>
     <name>ResetStatsDialog</name>
     <message>
         <source>This will delete all statistics. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Ceci détruira les statistiques. Êtes vous sûr?</translation>
     </message>
 </context>
 <context>

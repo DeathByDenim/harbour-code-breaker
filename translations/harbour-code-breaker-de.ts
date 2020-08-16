@@ -28,14 +28,14 @@
     </message>
     <message>
         <source>Code Breaker</source>
-        <translation type="unfinished">Codeknacker</translation>
+        <translation>Codeknacker</translation>
     </message>
 </context>
 <context>
     <name>ResetStatsDialog</name>
     <message>
         <source>This will delete all statistics. Are you sure?</source>
-        <translation type="unfinished"></translation>
+        <translation>Hierdurch werden alle Statistiken gelöscht. Sind Sie sicher?</translation>
     </message>
 </context>
 <context>
