@@ -14,9 +14,10 @@ ListItem {
     property int fourthanswer: 0
     property bool editable: true
 
-    contentHeight: Theme.itemSizeMedium
+    contentHeight: Theme.iconSizeLarge
     anchors.leftMargin: Theme.horizontalPageMargin
     anchors.rightMargin: Theme.horizontalPageMargin
+    anchors.topMargin: Theme.itemSizeMedium - Theme.iconSizeLarge
     enabled: false
     id: thislistitem
 
