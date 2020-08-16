@@ -33,7 +33,7 @@ Page {
 
         Label {
             height: Theme.iconSizeExtraLarge
-            width: parent - 2 * Theme.horizontalPageMargin
+            width: parent.width - 2 * Theme.horizontalPageMargin
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             text: qsTr("Games played: ") + numplayed
