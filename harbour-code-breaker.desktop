@@ -7,3 +7,8 @@ Name=Code Breaker
 Name[de]=Codeknacker
 Name[nl]=Codekraker
 Name[fr]=Pirater le code
+
+[X-Sailjail]
+Permissions=
+OrganizationName=harbour-code-breaker
+ApplicationName=harbour-code-breaker
